@@ -10,7 +10,6 @@ import { GoogleLogin, googleLogout  } from '@react-oauth/google';
 import useAuthStore from '../store/authStore';
 import { IUser } from '../types';
 import { createOrGetUser } from '../utils';
-import Logo from '../utils/tiktik-logo.png';
 
 const Navbar = () => {
   const [user, setUser] = useState<IUser | null>();
@@ -32,16 +31,10 @@ const Navbar = () => {
 
   return (
     <div className='w-full flex justify-between items-center border-b-2 border-gray-200 py-2 px-4'>
-      <Link href='/'>
-        <div className='w-[100px] md:w-[129px] md:h-[30px] h-[38px]'>
-          <Image
-            className='cursor-pointer'
-            src={Logo}
-            alt='logo'
-            layout='responsive'
-          />
-        </div>
-      </Link>
+      
+      <div className='w-[100px] md:w-[129px] md:h-[30px] h-[38px] socialmedialogo'>
+        <Link href='/'>Social Media</Link>
+      </div>
 
       <div className='relative hidden md:block'>
         <form

@@ -9,6 +9,14 @@ body {
   box-sizing: border-box;
 }
 
+.socialmedialogo {
+  font-weight: 700;
+  font-size: 23px;
+  color: #E1CC00;
+  text-shadow: 0 0 2px #0092E1;
+  line-height: 1.3rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
